@@ -2,9 +2,12 @@
 
 In today’s internet-driven world, **safeguarding network infrastructure against malicious activities** is more crucial than ever. **ShieldAI** is a real-time **cyber threat detection and prevention system** that leverages machine learning and AI to **detect, classify, and block cyberattacks** as they happen — directly from live network traffic.
 
-Using **Scapy** for live packet sniffing and **FastAPI** for the backend, the system extracts **71+ features** per packet and feeds them into a **pre-trained Autoencoder and Deep Neural Network (DNN)** model to detect anomalies and predict threats such as:
+**CICIDS2017** Dataset : ShieldAI’s AI models are trained and validated using the CICIDS2017 dataset, a comprehensive and publicly available benchmark dataset for intrusion detection systems. This dataset contains labeled network traffic with realistic benign and attack scenarios such as DDoS, brute force, port scans, and SQL injection, making it ideal for training machine learning models in cybersecurity.
 
 - 🚨 DDoS Attacks  
+
+Using **Scapy** for live packet sniffing and **FastAPI** for the backend, the system extracts **71+ features** per packet and feeds them into a **pre-trained Autoencoder and Deep Neural Network (DNN)** model to detect anomalies and predict threats such as:
+
 - ⚠️ Port Scans  
 - 🔑 Brute Force Logins  
 - 🛠️ SQL Injections  
