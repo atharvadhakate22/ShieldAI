@@ -29,7 +29,7 @@ Threat predictions are streamed in real-time to a **React-based dashboard**, all
 ## 💡 How It Works
 
 1. **Packet Capture**: Scapy captures packets in real-time.
-2. **Feature Extraction**: 71 custom features are extracted from each packet.
+2. **Feature Extraction**: 71 custom features are extracted from each packet (Xgboost).
 3. **Threat Prediction**: Features are passed into a trained AI model (Autoencoder + DNN).
 4. **Visualization**: Predictions are streamed to the frontend.
 5. **Prevention**: If an attack is detected, the source IP is blocked instantly.
@@ -42,10 +42,9 @@ Threat predictions are streamed in real-time to a **React-based dashboard**, all
 |---------------|------------------------------------|
 | Frontend      | React.js, Chart.js, Bootstrap      |
 | Backend       | FastAPI, Uvicorn, Scapy            |
-| AI Models     | TensorFlow/Keras, Autoencoder, DNN |
-| IP Blocking   | WinDivert, Windows Firewall (netsh)|
-| Security      | SMTP, dotenv, OTP Login            |
-| Reporting     | fpdf, cryptography                 |
+| AI Models     | TensorFlow/Keras, Autoencoder, DNN, Xgboost |
+| IP Blocking   | WinDivert using WinDivert.sys Driver|
+
 
 ---
 
